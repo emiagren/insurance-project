@@ -1,4 +1,20 @@
-.contact-header {
+* {
+    box-sizing: border-box;
+}
+
+.contact-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 960px;
-    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3; 
+    max-width: 960px;
+    height: auto;
+
+    background: #A9A19E;
 }
