@@ -12,7 +12,7 @@ header {
     background: #C7DDEA;
 }
 
-nav {
+.nav-bar {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +20,16 @@ nav {
     height: 68px;
 
     background: #ffffff;
+}
+
+.nav-links {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+
+    color: #000000;
 }
 
 .grid-container {
