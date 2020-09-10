@@ -1,18 +1,47 @@
+body {
+    background: #E5E5E5;
+}
 
-.contact-header img {
-    display: block;
+header {
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
+    max-width: 1002px;
+    height: 340px;
+
+    background: #C7DDEA;
+}
+
+nav {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1002px;
+    height: 68px;
+
+    background: #ffffff;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto; 
-    max-width: 960px;
-    height: auto;
+    grid-template-rows: 120px 120px 120px 120px;
+    max-width: 1002px;
+    height: 544;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 
     background: #A9A19E;
 }
+
+footer {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1002px;
+    height: 340px;
+
+    background: #777574;
+}
+
