@@ -17,6 +17,7 @@ header {
 }
 
 h2 {
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 50px;
     font-style: bold;
     text-align: center;
@@ -25,6 +26,7 @@ h2 {
 }
 
 .nav-bar {
+    
     display: flex;
     margin: auto;
     max-width: 1002px;
@@ -36,12 +38,14 @@ h2 {
 }
 
 .nav-links li {
+
     display: inline-block;
     margin: 70px;
 }
 
 .nav-links li a {
-    font-family: sans-serif;
+
+    font-family: 'Fira Sans', sans-serif;;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -59,14 +63,117 @@ a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 120px 120px 120px 120px;
+    grid-template-columns: 250px 250px 334px 166px;
+    grid-template-rows: repeat(5, 100px);
     max-width: 1002px;
-    height: 544;
     padding: 20px;
     margin: auto;
 
     background: #A9A19E;
+}
+
+h3 {
+        grid-column: 1/span 2;
+        grid-row: 1;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 45px;
+        font-style: bold;
+        text-align: left;
+        margin-top: 100px;
+        margin-left: 65px;
+
+        color: #ffffff;
+}
+
+form {
+    
+    grid-column: 3/span 2;
+    grid-row: 2;
+}
+
+label[for=email] , label[for=message]{
+
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    margin-top: 15px;
+
+    color: white;
+}
+
+input[type=text] {
+
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 334px;
+    padding: 8px 30px;
+    margin: 8px 0;
+  }
+
+input[name=message] {
+    height: 166px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 3;
+    grid-row: 5;
+    margin-top: 20px;
+}
+button {
+    border-style: none;
+    border-radius: 100px;
+    display: inline-block;
+
+    padding: 10px;
+    width: 131px;
+    height: 39px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.citymap-img {
+    padding: 20px;
+    margin: auto;
+    max-width: 1002px;
+    height: 407px;
+    background-image: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap_img.png?raw=true);
+}
+
+.address {
+    border: 2px;
+    width: 323px;
+    height: 206px;
+    margin-top: 27px;
+    margin-left: 67px;
+    background-color: #fab131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    padding: 20px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 45px;
+    font-style: bold;
+    text-align: left;
+    color: #ffffff;
+}
+
+p {
+    padding: 5px;
+    font-family: 'Fira Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
 }
 
 footer {
