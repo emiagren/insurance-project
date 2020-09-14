@@ -61,11 +61,12 @@ a:hover {
     color: #000000;
 }
 
-.grid-container {
+.grid-container1 {
     display: grid;
-    grid-template-columns: 250px 250px 334px 166px;
-    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: 250px 250px 334px 128px;
+    grid-template-rows: repeat(5, 101px);
     max-width: 1002px;
+    height: 544px;
     padding: 20px;
     margin: auto;
 
@@ -98,6 +99,7 @@ label[for=email] , label[for=message]{
     font-style: bold;
     font-weight: 600;
     margin-top: 15px;
+    letter-spacing: -0.02em;
 
     color: white;
 }
@@ -107,12 +109,25 @@ input[type=text] {
     border: 2px solid white;
     border-radius: 2px;
     width: 334px;
-    padding: 8px 30px;
+    height: 40px;
     margin: 8px 0;
-  }
+}
 
-input[name=message] {
+textarea[name=message] {
+
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 334px;
     height: 166px;
+    padding: 18px;
+    margin: 8px 0;
+}
+
+::placeholder {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
 }
 
 .btn-container {
@@ -122,6 +137,7 @@ input[name=message] {
     grid-row: 5;
     margin-top: 20px;
 }
+
 button {
     border-style: none;
     border-radius: 100px;
@@ -133,6 +149,7 @@ button {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
     font-size: 10px;
+    letter-spacing: -0.02em;
     text-align: center;
     text-transform: uppercase;
     
@@ -140,7 +157,10 @@ button {
 
 }
 
-.citymap-img {
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(6, 160px);
+    grid-template-rows: repeat(4, 92px);
     padding: 20px;
     margin: auto;
     max-width: 1002px;
@@ -148,8 +168,7 @@ button {
     background-image: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap_img.png?raw=true);
 }
 
-.address {
-    border: 2px;
+.address-box {
     width: 323px;
     height: 206px;
     margin-top: 27px;
@@ -159,20 +178,22 @@ button {
 }
 
 h4 {
-    padding: 20px;
     font-family: 'Frank Ruhl Libre', serif;
-    font-size: 45px;
-    font-style: bold;
     text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    font-size: 45px;
     color: #ffffff;
 }
 
 p {
-    padding: 5px;
     font-family: 'Fira Sans', sans-serif;;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
+    letter-spacing: -0.02em;
+    margin-left: 20px;
     color: #ffffff;
 }
 
