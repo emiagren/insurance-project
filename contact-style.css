@@ -1,16 +1,16 @@
 * {
     box-sizing: border-box;
+    margin: auto;
 }
 
 body {
     background: #E5E5E5;
+    min-width: 82vh;
 }
 
 header {
     display: flex;
-    margin: auto;
     padding: 20px;
-    max-width: 1002px;
     height: 340px;
     justify-content: center;
     background: #C7DDEA;
@@ -26,29 +26,28 @@ h2 {
 }
 
 .nav-bar {
-    
     display: flex;
-    margin: auto;
-    max-width: 1002px;
+    flex-wrap: wrap;
+    flex: 1;
     height: 68px;
-    justify-content: space-around;
-    align-items: center;
 
     background: #ffffff;
 }
 
-.nav-links li {
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+}
 
-    display: inline-block;
-    margin: 70px;
+.nav-links li {
+    margin: 20px;
 }
 
 .nav-links li a {
-
     font-family: 'Fira Sans', sans-serif;;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 a {
@@ -60,39 +59,30 @@ a:hover {
     color: #000000;
 }
 
-.grid-container1 {
-    display: grid;
-    grid-template-columns: 250px 250px 334px 128px;
-    grid-template-rows: repeat(5, 101px);
-    max-width: 1002px;
+.main-grid-container {
+    display: flex;
+    flex-wrap: wrap;
     height: 544px;
     padding: 20px;
-    margin: auto;
 
     background: #A9A19E;
 }
 
 h3 {
-        grid-column: 1/span 2;
-        grid-row: 1;
         font-family: 'Frank Ruhl Libre', serif;
         font-size: 45px;
         font-style: bold;
         text-align: left;
-        margin-top: 100px;
-        margin-left: 65px;
 
         color: #ffffff;
 }
 
 form {
-    
     grid-column: 3/span 2;
     grid-row: 2;
 }
 
 label[for=email] , label[for=message]{
-
     display: block;
     font-family: 'Fira Sans', sans-serif;
     font-style: bold;
@@ -104,7 +94,6 @@ label[for=email] , label[for=message]{
 }
 
 input[type=text] {
-
     border: 2px solid white;
     border-radius: 2px;
     width: 334px;
@@ -113,7 +102,6 @@ input[type=text] {
 }
 
 textarea[name=message] {
-
     border: 2px solid white;
     border-radius: 2px;
     width: 334px;
@@ -156,19 +144,17 @@ button {
 
 }
 
-.grid-container2 {
+.main-bottom {
     display: flex;
-    margin: auto;
-    max-width: 1002px;
+    flex-wrap: wrap;
     height: 407px;
     background-image: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap_img.png?raw=true);
 }
 
 .address-box {
-    width: 323px;
+    width: 100%;
     height: 206px;
     margin-top: 45px;
-    margin-left: 86px;
     background-color: #fab131;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -178,7 +164,7 @@ h4 {
     text-align: left;
     margin-top: 22px;
     margin-left: 22px;
-    margin-bottom: -7px;
+    margin-bottom: 0px;
     font-size: 45px;
     font-weight: 900;
     color: #ffffff;
@@ -202,8 +188,6 @@ p {
 
 footer {
     padding: 20px;
-    margin: auto;
-    max-width: 1002px;
     height: 340px;
 
     background: #777574;
