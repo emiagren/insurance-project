@@ -5,7 +5,7 @@
 
 body {
     background: #E5E5E5;
-    min-width: 82vh;
+    max-width: 135vh;
 }
 
 header {
@@ -32,22 +32,19 @@ h2 {
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
     height: 68px;
-    
     background: #ffffff;
 }
 
 .nav-links {
     display:flex;
-    list-style: none;
     justify-content: space-evenly;
-    align-items: center;
+    list-style: none;
     padding: 0;
 }
 
 .nav-links li {
-
+    margin: 20px;
 }
 
 .nav-links li a {
@@ -72,33 +69,27 @@ a:hover {
     flex-wrap: wrap;
     height: 644px;
     padding: 20px;
-
     background: #A9A19E;
 }
 
 h3 {
-        font-family: 'Frank Ruhl Libre', serif;
-        font-size: 45px;
-        font-weight: 900;
-        text-align: left;
-        margin-top: 25px;
-
-        color: #ffffff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: left;
+    color: #ffffff;
 }
 
 form {
-    grid-column: 3/span 2;
-    grid-row: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 label[for=email] , label[for=message]{
     display: block;
     font-family: 'Fira Sans', sans-serif;
-    font-style: bold;
     font-weight: 600;
-    margin-top: 15px;
     letter-spacing: -0.02em;
-
     color: white;
 }
 
@@ -126,21 +117,9 @@ textarea[name=message] {
     color: #000000;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: flex-end;
-    grid-column: 3;
-    grid-row: 5;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 button {
     border-style: none;
     border-radius: 100px;
-    display: inline-block;
-
-    padding: 10px;
     width: 131px;
     height: 39px;
     
@@ -148,33 +127,27 @@ button {
     font-weight: 600;
     font-size: 10px;
     letter-spacing: -0.02em;
-    text-align: center;
     text-transform: uppercase;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 
 }
 
-.main-bottom {
+.main-bottom-container {
     display: flex;
-    flex-wrap: wrap;
-    background: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap_img.png?raw=true) no-repeat;
+    flex-direction: column;
+    height: 407px;
+    background: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap.png?raw=true) no-repeat;
     background-position: center;
-    background-size: auto;
-    width: 100%;
-}
+    background-size: cover;
 
-.location-pin {
-    align-self: center; 
-    margin-top: 26px;   
-    margin-left: 56px;
 }
 
 .address-box {
     padding: 22px;
+    margin: 0;
     width: 100%;
-    height: auto;
-    margin-top: 45px;
     background-color: #fab131;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -203,3 +176,68 @@ footer {
     background: #777574;
 }
 
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 672px){
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 110px;
+}
+
+button {
+    margin-left: 202px;
+}
+
+.main-bottom-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.address-box {
+    width: 323px;
+    height: 206px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+}
+
+@media all and (min-width: 320px) and (max-width: 599px) {
+
+h2 {
+    font-size: 40px;
+}
+
+.nav-links li a {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+input[type=text] {
+    width: 290px;
+    height: 35px;
+}
+
+textarea[name=message] {
+    width: 290px;
+    height: 176px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+}
