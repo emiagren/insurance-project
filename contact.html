@@ -9,19 +9,54 @@
 
 <body>
     <header>
-        <h2>Oh hello there!</h2>
+        <div class="h2-container">
+            <h2>Oh hello there!</h2>
+        </div>  
+
+        <div class="img-wrap"  style="position: relative; left: 0; top: 0;">
+            <img class="img_manwithbaby"src=https://github.com/emiagren/insurance-project/blob/master/img/man_with_baby.png?raw=true alt="Man with baby">
+        </div>
+
     </header>
 
-    <nav class="nav-bar">
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our offer</a></li>
-            <li><a href="#">Why us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <section>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our offer</a></li>
+                <li><a href="#">Why us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
 
-    <section class="grid-container"></section>
+    <section>
+        <main class="main-container">
+
+            <h3>What's on your <br> mind?</h3>
+
+            <form>
+                <label for="email">Your email</label>
+                <input type="text" id="email" name="email">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Dear Insurance company..."></textarea>
+            </form>
+            
+            <div class="btn-container">
+                <button>Send message</button>
+            </div>
+
+        </main>
+    </section>
+
+    <section class="main-bottom">
+        <section class="address-box">
+            <h4>Come visit us!</h4>
+            <p>2219 Griffin Street</p>
+            <p>San Francisco</p>
+        </section>
+        <img class="location-pin" src="https://github.com/emiagren/insurance-project/blob/master/img/pin-location.png?raw=true" alt="Location pin">
+    </section>
 
     <footer></footer>
 </body>

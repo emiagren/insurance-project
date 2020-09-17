@@ -1,78 +1,203 @@
 * {
     box-sizing: border-box;
+    margin: auto;
 }
 
 body {
     background: #E5E5E5;
+    min-width: 82vh;
 }
 
 header {
     display: flex;
-    margin: auto;
+    flex-direction: column;
     padding: 20px;
-    max-width: 1002px;
-    height: 340px;
-    justify-content: center;
+    height: 400px;
     background: #C7DDEA;
 }
 
 h2 {
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: 50px;
-    font-style: bold;
+    font-weight: 900;
     text-align: center;
-    margin-top: 140px;
     color: #000000;
+}
+
+.img-wrap {
+    margin-bottom: -24px;
+    justify-content: center;
 }
 
 .nav-bar {
     display: flex;
-    margin: auto;
-    max-width: 1002px;
+    flex-wrap: wrap;
+    flex: 1;
     height: 68px;
-    justify-content: space-around;
-    align-items: center;
-
+    
     background: #ffffff;
 }
 
+.nav-links {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
 .nav-links li {
-    display: inline-block;
-    margin: 70px;
+
 }
 
 .nav-links li a {
-    font-family: sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    
-    color: #A9A19E;
+    font-size: 17px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: #A9A19E;
 }
 
 a:hover {
     color: #000000;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 120px 120px 120px 120px;
-    max-width: 1002px;
-    height: 544;
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 644px;
     padding: 20px;
-    margin: auto;
 
     background: #A9A19E;
 }
 
+h3 {
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 45px;
+        font-weight: 900;
+        text-align: left;
+        margin-top: 25px;
+
+        color: #ffffff;
+}
+
+form {
+    grid-column: 3/span 2;
+    grid-row: 2;
+}
+
+label[for=email] , label[for=message]{
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: bold;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: -0.02em;
+
+    color: white;
+}
+
+input[type=text] {
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 334px;
+    height: 40px;
+    margin: 8px 0;
+}
+
+textarea[name=message] {
+    border: 2px solid white;
+    border-radius: 2px;
+    width: 334px;
+    height: 166px;
+    padding: 18px;
+    margin: 8px 0;
+}
+
+::placeholder {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: left;
+    font-weight: 600;
+    color: #000000;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 3;
+    grid-row: 5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    border-style: none;
+    border-radius: 100px;
+    display: inline-block;
+
+    padding: 10px;
+    width: 131px;
+    height: 39px;
+    
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    background: url(https://github.com/emiagren/insurance-project/blob/master/img/citymap_img.png?raw=true) no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 100%;
+}
+
+.location-pin {
+    align-self: center; 
+    margin-top: 26px;   
+    margin-left: 56px;
+}
+
+.address-box {
+    padding: 22px;
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    background-color: #fab131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: left;
+    font-size: 45px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
 footer {
     padding: 20px;
-    margin: auto;
-    max-width: 1002px;
     height: 340px;
 
     background: #777574;
