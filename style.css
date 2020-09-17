@@ -1,60 +1,253 @@
-body{
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
     background-color:#E5E5E5;
 }
 
-.whiteText{
-    color: white;
+.offer {
+font-family: 'Fira Sans', sans-serif;   
 }
 
-.learnMore{
-    color: white;
-    text-align: center;
+.waiting{
+    font-family: 'Fira Sans', sans-serif;   
 }
+
+.white-text{
+    color: white;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+.grid-learn{
+color: white;
+font-family: 'Frank Ruhl Libre', serif;
+}
+
+.grid-join{
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+
+/* for desktop */
+@media screen and (min-width: 481px){
+
+    .main-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(360px, 1fr) minmax(360px, 1fr);
+    text-align: center;
+    }
+
+    .grid-item-1{
+    grid-row: 1/3;
+    align-items: center;
+    background: #C7DDEA;
+    }
+
+    .grid-item-1 img{
+    display: flex;
+    align-content: center;
+    height: 279px;
+    margin-top: 270px;
+    }
+
+.grid-item-2{
+grid-row: 1/2;
+background: #F17949;
+display: flex;
+justify-content: center;
+    }
+
+
+.grid-text{
+position: absolute;
+width: 268px;
+height: 103px;
+left: 324px;
+top: 172px;
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+    }
+
+    .button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 12px;
+    padding: 14px 30px;
+    border-radius: 10rem;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,0.19);
+    }
+
+.offer{
+position: absolute;
+width: 250px;
+height: 17px;
+left: 860px;
+top: 112px;
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+    }
+
+    .grid-learn{
+        position: absolute;
+        width: 250px;
+        height: 41px;
+        left: 860px;
+        top: 131px;
+        font-family: 'Frank Ruhl Libre';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF; 
+    }
+
+    .grid-join{
+        position: absolute;
+        width: 250px;
+        height: 41px;
+        left: 860px;
+        top: 404px;
+        
+        font-family: 'Frank Ruhl Libre';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 41px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        
+        color: #FFFFFF;
+    }
+
+.waiting{
+position: absolute;
+width: 250px;
+height: 17px;
+left: 860px;
+top: 387px;
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+    }
+
+    .grid-item-3{
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAB131;
+    }
+
+    .nav-bar {
+        display: flex;
+        margin: auto;
+        max-width: 1002px;
+        height: 68px;
+        justify-content: space-around;
+        align-items: center;
+    
+        background: #E5E5E5;
+    }
+    
+    .nav-links li {
+        display: inline-block;
+        margin: 70px;
+    }
+    
+    .nav-links li a {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        
+        color: #A9A19E;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #000000;
+    }
 
 
 /* for mobile screen */
 @media screen and (max-width: 480px) {
-.grid-container{
+
+.main-header{
 height: 100vh;
 display: grid;
-}
-
+width: 314px;
+height: 101px;
+left: 324px;
+top: 71px;
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: black;
+    }
+  
 .grid-item-1{
 background: #C7DDEA;
-position: absolute;
-width: 375px;
-height: 724px;
+grid-row: 1/3;
+justify-content: center;
+align-items: center;
 }
 
 .button {
     position: absolute;
     width: 131px;
     height: 39px;
-    background-color: white;
+    background: #FFFFFF;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 100px;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
   }
 
   .grid-item-1 img{
-    position: relative;
-    width: 342px;
-    height: 334px;
-    top: 165px;
+    width: 200px;
+    margin-top: 0.5rem;
 }
+
 
 .grid-item-2{
 background:#F17949; 
-grid-template-columns: 1fr;
-position: absolute;
-width: 375px;
-height: 315px;
-left: 0px;
-top: 724px;
+display: flex;
+justify-content: center;
+ align-items: center;
+}
+
+.grid-learn{
+    text-align: center;
 }
 
 .grid-item-3{
@@ -147,74 +340,6 @@ left: 0px;
 top: 4504px;
 background: #777574;  
 }
+
 }
-
-/*
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, minmax(100px, 200px));
-    grid-gap: 1rem;
-    grid-auto-flow: dense;
 }
-
-img{
-    position: absolute;
-    width: 286px;
-    height: 279px;
-    top: 265px;
-}
-
-
-.grid-item-1 {
-background: #C7DDEA;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 501px;
-height: 544px;
-left: 219px;
-top: 0px;
-}
-
-
-.grid-item-2{
-background:#e27f54;
-display: flex;
-justify-content: center;
-align-items: center;    
-}
-
-.grid-item-3{
-background:#f0b34e;
-display: flex;
-justify-content: center;
-align-items: center;    
-    }
-
-    *for mobile*
-   body{
-    background-color:#E5E5E5;
-}
-
-
-.grid-container{
-height: 100vh;
-display: grid;
-}
-
-.grid-item-1{
-background: #C7DDEA;
-grid-row: 300px;
-}
-
-.grid-item-2{
-background: #f0b34e;
-grid-template-columns: 1fr;
-}
-
-.grid-item-3{
-background:#e27f54;
-grid-template-columns: 1fr;
-} 
-*/
