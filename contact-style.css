@@ -31,19 +31,21 @@ h2 {
 
 .nav-bar {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     height: 68px;
     background: #ffffff;
 }
 
 .nav-links {
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 0;
 }
 
 .nav-links li {
+    display: inline-block;
     margin: 20px;
 }
 
@@ -86,10 +88,10 @@ form {
 }
 
 label[for=email] , label[for=message]{
-    display: block;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
+    margin-left: 0px;
     color: white;
 }
 
